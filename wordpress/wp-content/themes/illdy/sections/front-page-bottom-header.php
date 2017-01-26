@@ -6,6 +6,7 @@
  * @subpackage illdy
  */
 ?>
+
 <?php
 if ( current_user_can( 'edit_theme_options' ) ) {
 	$first_row_from_title  = get_theme_mod( 'illdy_jumbotron_general_first_row_from_title', __( 'Clean', 'illdy' ) );
@@ -30,9 +31,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 if ( $first_row_from_title || $second_row_from_title || $third_row_from_title || $entry || $first_button_title || $second_button_title ) {
 
 	?>
-	<div class="bottom-header front-page">
-		<div class="container">
-			<div class="row">
+ <div class="bottom-header front-page">
 				<?php if ( $first_row_from_title || $second_row_from_title || $third_row_from_title ): ?>
 					<div class="col-sm-12">
 						<h2><?php if ( $first_row_from_title ) {
@@ -47,6 +46,28 @@ if ( $first_row_from_title || $second_row_from_title || $third_row_from_title ||
 							} ?>
 						</h2>
 					</div><!--/.col-sm-12-->
+                <div class="container">
+                        <div class="row">
+                                <div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+
+
 				<?php endif; ?>
 				<div class="col-sm-8 col-sm-offset-2">
 					<?php if ( $entry ): ?>

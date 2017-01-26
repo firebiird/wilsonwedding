@@ -17,6 +17,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 }
 ?>
 <footer id="footer">
+<div class="elevator-button">Back to Top</div>
 	<div class="container">
 		<div class="row">
 			<?php

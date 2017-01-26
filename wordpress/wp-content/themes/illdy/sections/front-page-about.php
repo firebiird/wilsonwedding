@@ -30,7 +30,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 					<?php endif; ?>
 					<?php if( $general_entry ): ?>
 						<div class="col-sm-10 col-sm-offset-1">
-							<p><?php echo illdy_sanitize_html( $general_entry ); ?></p>
+							<p><?php echo $general_entry  ?></p>
 						</div><!--/.col-sm-10.col-sm-offset-1-->
 					<?php endif; ?>
 				</div><!--/.row-->

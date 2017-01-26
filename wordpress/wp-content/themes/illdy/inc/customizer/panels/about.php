@@ -63,7 +63,6 @@ $wp_customize->add_control(
 if ( get_theme_mod( $prefix .'_about_general_entry' ) ) {
     $wp_customize->add_setting( $prefix .'_about_general_entry',
         array(
-            'sanitize_callback' => 'illdy_sanitize_html',
             'default'           => __( 'It is an amazing one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.', 'illdy' ),
             'transport'         => 'postMessage'
         )
@@ -83,7 +82,6 @@ if ( get_theme_mod( $prefix .'_about_general_entry' ) ) {
     $wp_customize->add_setting(
         $prefix . '_about_general_text',
         array(
-            'sanitize_callback' => 'esc_html',
             'default'           => '',
             'transport'         => 'postMessage'
         )

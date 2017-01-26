@@ -36,8 +36,10 @@ define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+    
+define('FS_METHOD', 'ftpsockets');
+define('FTP_BASE', '/home/lee/projects/wilsonwedding/wordpress');
 
-define( 'JETPACK_DEV_DEBUG', true);
 
 /**#@+
  * Authentication Unique Keys and Salts.

@@ -214,6 +214,8 @@ if ( ! function_exists( 'illdy_sanitize_html' ) ) {
 				'href'  => array(),
 				'title' => array(),
 			),
+			'p'      => array(),
+			'h1'	 => array(),
 			'br'     => array(),
 			'em'     => array(),
 			'img'    => array(
